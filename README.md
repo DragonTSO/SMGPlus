@@ -211,7 +211,7 @@ Use `category: materials` or `category: generators` in config.
 ## 🛠️ Building from Source
 
 ```bash
-git clone https://github.com/waleks647/SMG.git
+git clone https://github.com/DragonTSO/SMGPlus
 cd SMG
 mvn clean package
 ```
@@ -234,5 +234,5 @@ Found a bug? Please report it on the [Issues page](https://github.com/waleks647/
 
 ## 🙏 Credits
 
-- Original Author: [waleks647](https://github.com/waleks647)
+- Original Author: [waleks647](https://github.com/waleks647),[DragonDirt](https://github.com/DragonTSO)
 - Slimefun Team for the amazing API
