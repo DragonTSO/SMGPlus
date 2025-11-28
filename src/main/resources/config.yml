@@ -1,2 +1,6 @@
+# SimpleMaterialGenerators Configuration
+# Version: 2.0.0
+
 options:
-  auto-update: true
+  # Enable debug messages in console
+  debug: false

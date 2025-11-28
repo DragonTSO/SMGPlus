@@ -1,0 +1,846 @@
+# ============================================
+# SimpleMaterialGenerators - Generators Config
+# ============================================
+# 
+# Bạn có thể tuỳ chỉnh hoặc thêm mới generator tại đây!
+#
+# Cấu trúc mỗi generator:
+#   id:                    # ID duy nhất (không trùng)
+#     enabled: true/false  # Bật/tắt generator này
+#     name: "&7Name"       # Tên hiển thị (hỗ trợ màu &)
+#     category: generators # Category: "generators" hoặc "materials"
+#     material: STONE      # Block texture khi đặt
+#     output: COBBLESTONE  # Vật phẩm tạo ra
+#     rate: 4              # Số ticks để tạo 1 item (càng thấp càng nhanh)
+#     lore:                # Mô tả item (danh sách)
+#       - "&6Rate: &e4 ticks"
+#       - ""
+#       - "&9&oSimpleMaterialGenerators"
+#     recipe:
+#       type: ENHANCED_CRAFTING_TABLE  # Loại bàn craft
+#       shape:             # Recipe 3x3 (dùng key hoặc AIR cho slot trống)
+#         - "AAA"
+#         - "BCB"
+#         - "AAA"
+#       ingredients:       # Định nghĩa các key
+#         A: SMOOTH_STONE
+#         B: LAVA_BUCKET
+#         C: IRON_PICKAXE
+#
+# ============================================
+# CATEGORIES:
+#   - "generators" : Hiển thị trong tab SMG Generators (máy hoạt động)
+#   - "materials"  : Hiển thị trong tab SMG Materials (vật liệu, broken items)
+# ============================================
+#
+# Recipe types có sẵn:
+#   - ENHANCED_CRAFTING_TABLE
+#   - SMELTERY
+#   - GRIND_STONE
+#   - ORE_CRUSHER
+#   - MAGIC_WORKBENCH
+#   - ARMOR_FORGE
+#
+# Slimefun items: Dùng prefix "SF:" ví dụ "SF:SOLDER_INGOT"
+# Generator khác: Dùng prefix "GEN:" ví dụ "GEN:cobblestone"
+# ============================================
+
+generators:
+
+  # ========== MATERIAL ==========
+  smg_core:
+    enabled: true
+    name: "&6Gennerator Core"
+    category: materials
+    material: CHORUS_FLOWER
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "BCD"
+        - "AAA"
+      ingredients:
+        A: SMOOTH_STONE
+        B: LAVA_BUCKET
+        C: IRON_PICKAXE
+        D: WATER_BUCKET
+  compressed_cobblestone:
+    enabled: true
+    name: "&6Comperssed Cobblestone"
+    category: materials
+    material: COBBLESTONE
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: COBBLESTONE
+  compressed_granite:
+    enabled: true
+    name: "&6Comperssed Granite"
+    category: materials
+    material: POLISHED_GRANITE
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: GRANITE
+  compressed_andesite:
+    enabled: true
+    name: "&6Comperssed Andesite"
+    category: materials
+    material: POLISHED_ANDESITE
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: ANDESITE
+  compressed_diorite:
+    enabled: true
+    name: "&6Comperssed Diorite"
+    category: materials
+    material: POLISHED_DIORITE
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: DIORITE
+  compressed_stone:
+    enabled: true
+    name: "&6Comperssed Stone"
+    category: materials
+    material: STONE
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: STONE
+  compressed_iron:
+    enabled: true
+    name: "&6Comperssed Iron"
+    category: materials
+    material: RAW_IRON
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: RAW_IRON
+  compressed_gold:
+    enabled: true
+    name: "&6Comperssed Gold"
+    category: materials
+    material: RAW_GOLD
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: RAW_GOLD
+  compressed_copper:
+    enabled: true
+    name: "&6Comperssed Copper"
+    category: materials
+    material: RAW_COPPER
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: RAW_COPPER
+  compressed_gravel:
+    enabled: true
+    name: "&6Comperssed Gravel"
+    category: materials
+    material: GRAVEL
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: GRAVEL
+  compressed_sand:
+    enabled: true
+    name: "&6Comperssed Sand"
+    category: materials
+    material: SAND
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: SAND
+  compressed_prismarine_shard:
+    enabled: true
+    name: "&6Comperssed Prismarine Shard"
+    category: materials
+    material: PRISMARINE_SHARD
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: PRISMARINE_SHARD
+  compressed_prismarine_crystals:
+    enabled: true
+    name: "&6Comperssed Prismarine Crystals"
+    category: materials
+    material: PRISMARINE_CRYSTALS
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: PRISMARINE_CRYSTALS
+  compressed_netherrack:
+    enabled: true
+    name: "&6Comperssed Netherrack"
+    category: materials
+    material: NETHER_BRICKS
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: NETHERRACK
+  compressed_soul_sand:
+    enabled: true
+    name: "&6Comperssed Soul Sand"
+    category: materials
+    material: SOUL_SOIL
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: SOUL_SAND
+  compressed_quartz:
+    enabled: true
+    name: "&6Comperssed Quartz"
+    category: materials
+    material: QUARTZ
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: QUARTZ
+  compressed_redstone:
+    enabled: true
+    name: "&6Comperssed Redstone"
+    category: materials
+    material: REDSTONE
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: REDSTONE
+  compressed_lapis_lazuli:
+    enabled: true
+    name: "&6Comperssed Lapis Lazuli"
+    category: materials
+    material: LAPIS_LAZULI
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: LAPIS_LAZULI
+  compressed_amethyst_shard:
+    enabled: true
+    name: "&6Comperssed Amethyst Shard"
+    category: materials
+    material: AMETHYST_SHARD
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: AMETHYST_SHARD
+  compressed_obsidian:
+    enabled: true
+    name: "&6Comperssed Obsidian"
+    category: materials
+    material: POLISHED_BLACKSTONE_BUTTON
+    output: NONE
+    rate: 0
+    is_broken: true
+    lore:
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "AAA"
+        - "AAA"
+      ingredients:
+        A: OBSIDIAN
+
+  # ========== GENNERATORS ==========
+  cobblestone:
+    enabled: true
+    name: "&7Cobblestone Generator"
+    category: generators
+    material: COBBLESTONE
+    output: COBBLESTONE
+    rate: 2
+    lore:
+      - "&6Rate: &e2 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_cobblestone"
+        B: "GEN:smg_core"
+  granite:
+    enabled: true
+    name: "&7Granite Generator"
+    category: generators
+    material: POLISHED_GRANITE
+    output: GRANITE
+    rate: 4
+    lore:
+      - "&6Rate: &e4 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_granite"
+        B: "GEN:smg_core"
+  andesite:
+    enabled: true
+    name: "&7Andesite Generator"
+    category: generators
+    material: POLISHED_ANDESITE
+    output: ANDESITE
+    rate: 4
+    lore:
+      - "&6Rate: &e4 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_andesite"
+        B: "GEN:smg_core"
+  diorite:
+    enabled: true
+    name: "&7Diorite Generator"
+    category: generators
+    material: POLISHED_DIORITE
+    output: DIORITE
+    rate: 4
+    lore:
+      - "&6Rate: &e4 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_diorite"
+        B: "GEN:smg_core"
+  stone:
+    enabled: true
+    name: "&7Stone Generator"
+    category: generators
+    material: STONE
+    output: STONE
+    rate: 4
+    lore:
+      - "&6Rate: &e4 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_stone"
+        B: "GEN:smg_core"
+  iron:
+    enabled: true
+    name: "&7Raw Iron Generator"
+    category: generators
+    material: IRON_ORE
+    output: RAW_IRON
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_iron"
+        B: "GEN:smg_core"
+  gold:
+    enabled: true
+    name: "&7Raw Gold Generator"
+    category: generators
+    material: GOLD_ORE
+    output: RAW_GOLD
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_gold"
+        B: "GEN:smg_core"
+  copper:
+    enabled: true
+    name: "&7Raw Copper Generator"
+    category: generators
+    material: COPPER_ORE
+    output: RAW_COPPER
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_copper"
+        B: "GEN:smg_core"
+  gravel:
+    enabled: true
+    name: "&7Gravel Generator"
+    category: generators
+    material: ANDESITE
+    output: GRAVEL
+    rate: 4
+    lore:
+      - "&6Rate: &e4 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_gravel"
+        B: "GEN:smg_core"
+  sand:
+    enabled: true
+    name: "&eSand Generator"
+    category: generators
+    material: SANDSTONE
+    output: SAND
+    rate: 4
+    lore:
+      - "&6Rate: &e4 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_sand"
+        B: "GEN:smg_core"
+  prismarine_shard:
+    enabled: true
+    name: "&ePrismarine Shard Generator"
+    category: generators
+    material: PRISMARINE
+    output: PRISMARINE_SHARD
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_prismarine_shard"
+        B: "GEN:smg_core"
+  prismarine_crystals:
+    enabled: true
+    name: "&ePrismarine Crystals Generator"
+    category: generators
+    material: SEA_LANTERN
+    output: PRISMARINE_CRYSTALS
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_prismarine_crystals"
+        B: "GEN:smg_core"
+  netherrack:
+    enabled: true
+    name: "&cNetherrack Generator"
+    category: generators
+    material: NETHERRACK
+    output: NETHERRACK
+    rate: 2
+    lore:
+      - "&6Rate: &e2 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_netherrack"
+        B: "GEN:smg_core"
+
+  # ========== SOUL SAND ==========
+  soul_sand:
+    enabled: true
+    name: "&8Soul Sand Generator"
+    category: generators
+    material: SOUL_SAND
+    output: SOUL_SAND
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_soul_sand"
+        B: "GEN:smg_core"
+  quartz:
+    enabled: true
+    name: "&8Quartz Generator"
+    category: generators
+    material: QUARTZ_BLOCK
+    output: QUARTZ
+    rate: 16
+    lore:
+      - "&6Rate: &e16ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_quartz"
+        B: "GEN:smg_core"
+  redstone:
+    enabled: true
+    name: "&8Redstone Generator"
+    category: generators
+    material: REDSTONE_ORE
+    output: REDSTONE
+    rate: 16
+    lore:
+      - "&6Rate: &e16ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_redstone"
+        B: "GEN:smg_core"
+  lapis_lazuli:
+    enabled: true
+    name: "&8Lapis Lazuli Generator"
+    category: generators
+    material: LAPIS_ORE
+    output: LAPIS_LAZULI
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_lapis_lazuli"
+        B: "GEN:smg_core"
+  amethyst_shard:
+    enabled: true
+    name: "&8Amethyst Shard Generator"
+    category: generators
+    material: AMETHYST_BLOCK
+    output: AMETHYST_SHARD
+    rate: 8
+    lore:
+      - "&6Rate: &e8 ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_amethyst_shard"
+        B: "GEN:smg_core"
+  obsidian:
+    enabled: true
+    name: "&8Obsidian Generator"
+    category: generators
+    material: OBSIDIAN
+    output: OBSIDIAN
+    rate: 32
+    lore:
+      - "&6Rate: &e32ticks"
+      - ""
+      - "&9&oSimpleMaterialGenerators"
+    recipe:
+      type: ENHANCED_CRAFTING_TABLE
+      shape:
+        - "AAA"
+        - "ABA"
+        - "AAA"
+      ingredients:
+        A: "GEN:compressed_obsidian"
+        B: "GEN:smg_core"
+# ============================================
+# CUSTOM GENERATORS - Thêm generator mới ở đây!
+# ============================================
+# Ví dụ: Generator tạo Dirt
+#
+#  dirt:
+#    enabled: true
+#    name: "&6Dirt Generator"
+#    category: generators    # Hoặc "materials" nếu là vật liệu
+#    material: DIRT
+#    output: DIRT
+#    rate: 3
+#    lore:
+#      - "&6Rate: &e3 ticks"
+#      - "&aSuper fast!"
+#      - ""
+#      - "&9&oSimpleMaterialGenerators"
+#    recipe:
+#      type: ENHANCED_CRAFTING_TABLE
+#      shape:
+#        - "ABA"
+#        - "BCB"
+#        - "ABA"
+#      ingredients:
+#        A: GRASS_BLOCK
+#        B: BONE_MEAL
+#        C: "GEN:cobblestone"
+#
+# ============================================
